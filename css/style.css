@@ -296,54 +296,64 @@ body {
     width: 100%;
     height: 448px;
     background: rgba(244, 244, 244, 0.7);
+}
+
+.subscription__container {
     display: flex;
     justify-content: space-between;
 }
-/*
-.subscription__content {
-    width: 359px;
-    height: 351px;
-    outline: 1px solid black;
-    padding-top: 97px;
-}
 
-.subscription__face {
-    padding-left: 132px;
+.subscription__content {
+    width: 350px;
+    text-align: center;
+    padding-top: 97px;
 }
 
 .subscription__text {
     font-size: 20px;
-line-height: 24px;
-text-align: center;
-font-weight: 400;
-padding-top: 30px;
-width: 350px;
+    line-height: 24px;
+    color: #222224;
+    padding-top: 30px;
 }
 
 .subscription__input {
     width: 557px;
-    height: 142px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 155px;
 }
 
 .subscription__input-heading {
-    font-size: 40px;
-    line-height: 167.2%;
-    text-align: center;
+    font-size: 24px;
+    line-height: 29px;
+    color: #222224;
 }
 
 .subscription__input-text {
-    font-size: 24px;
-    line-height: 167.2%;
-    text-align: center;
-}
-
-.subscribe__input-field {
-    display: flex;
+    font-size: 18px;
+    line-height: 21px;
+    color: #222224;
+    padding-bottom: 33px;
 }
 
 .subscription--input {
-    
-} */
+    height: 49px;
+    background: #E1E1E1;
+}
+
+.subscription__input--button {
+    background: var(--pink-color);
+    height: 49px;
+}
+
+.button-text {
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
 
 .social-links {
     max-width: 1600px;
@@ -374,8 +384,13 @@ width: 350px;
     float: left;
 }
 
+.social-links__icon-wrap {
+    margin: 0 auto;
+    width: 14px;
+}
+
 .social-links_wrapper-img {
-    padding: 8px 8px 8px 8px;
+    vertical-align: -webkit-baseline-middle;
 }
 
 .instagram-wrap {
