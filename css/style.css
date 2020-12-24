@@ -195,6 +195,7 @@ body {
     height: 400px;
     background-color: var(--pink-background);
     padding: 9px 49px 11px 109px;
+    position: relative;
 }
 
 .featured__content-heading,
@@ -232,15 +233,63 @@ body {
     width: 211px;
     height: 47px;
     margin: 48.5px auto 95.5px auto;
+    color: var(--pink-color);
 }
 
 .featured__btn-browse-text {
     font-size: 16px;
     line-height: 19px;
-    color: var(--pink-color);
     margin: 0 auto;
     width: 139px;
     padding-top: 14px;
+}
+
+.featured .featured__btn-browse:hover {
+    background-color: var(--pink-color);
+    color: white;
+}
+
+.featured .featured__btn-browse:active {
+    opacity: 0.5;
+}
+
+.featured .featured__content-blocks {
+    position: relative;
+}
+
+.featured .featured__content-blocks:hover .featured__item-img,
+.featured .featured__content-blocks:focus .featured__item-img {
+  filter: brightness(33%);
+}
+
+.featured .featured__content-blocks:hover .featured__item-button,
+.featured .featured__content-blocks:focus .featured__item-img {
+  display: block;
+}
+
+.featured .featured__item-button {
+  display: none;
+  position: absolute;
+  top: 190px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFF;
+  padding: 10px 16px 8px 13px;
+  background-color: transparent;
+  border: 1px solid #FFF;
+}
+
+.featured .featured__item-button:active {
+opacity: 0.5;
+}
+.hover-text {
+    margin-left: 11px;
+}
+
+.featured .featured__item-button .featured__item-button:hover {
+  background-color: #F16D7F;
 }
 
 .advantages {
