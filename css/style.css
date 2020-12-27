@@ -566,3 +566,135 @@ margin-top: 65px;
 .catalog__sort-arrow {
     margin-left: 10px;
 }
+
+.registration {
+    display: flex;
+    padding-top: 64px;
+    padding-bottom: 96px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 360px;
+    height: 45px;
+    border: 1px solid #A4A4A4;
+    display: block;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.registration__fieldset-login {
+    margin-top: 34px;
+}
+
+.registration__login-legend,
+.registration__name-legend {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    margin-bottom: 20px;
+}
+
+.registration__password-comment {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+}
+
+.registration__loyalty-header {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;   
+    margin-bottom: 22px;
+}
+
+.registration__loyalty-description {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 21px;
+}
+
+.registration__loyalty-item {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 16px;
+}
+
+.loyalty-checkbox {
+    margin-right: 23px;
+}
+
+.registration__gender {
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 25px;
+}
+
+.registration__gender::before {
+    position: absolute;
+    top: -2px;
+    left: -1px;
+    content: '';
+    width: 17px;
+    height: 17px;
+    border: 1px solid #A4A4A4;
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked+.registration__gender::before {
+    background: var(--pink-color);
+}
+
+.registration__loyalty {
+    margin-left: 128px;
+}
+
+.registration__fieldset-name:first-child,
+.registration__fieldset-login:first-child {
+    margin-bottom: 20px;
+}
+
+.registration__input {
+    margin-bottom: 20px;
+}
+
+.registration__input-login {
+    margin-bottom: 20px;
+}
+
+.registration__button {
+    padding: 16px 29px 17px 26px;
+    background-color: var(--pink-color);
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid var(--pink-color);
+    margin-top: 39px;
+}
+
+.registration__button-svg {
+    margin-left: 20px;
+    padding-top: 4px;
+}
+
+.registration__input::placeholder,
+.registration__input-login::placeholder {
+   padding-left: 17px;
+   font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+}
