@@ -35,49 +35,61 @@
         <section class="breadcrumb">
             <div class="breadcrumb__bg-layer container">
                 <div class="breadcrumb__heading">
-                    <h1 class="breadcrumb__text">registration</h1>
+                    <h1 class="breadcrumb__text">shopping cart</h1>
                 </div>
             </div>
         </section>
-        <section class="registration container">
-            <div class="registration__form">
-                <form action="#" method="get">
-                    <fieldset class="registration__fieldset-name">
-                        <legend class="registration__name-legend">Your Name</legend>
-                        <input type="text" placeholder="First Name" class="registration__input">
-                        <input type="text" placeholder="Last Name" class="registration__input">
-                        <input type="radio" name="gender" value="male">
-                        <label for="male" class="registration__gender">Male</label>
-                        <input type="radio" name="gender" value="female">
-                        <label for="female" class="registration__gender">Female</label>
-                        <input type="radio" name="gender" value="other">
-                        <label for="other" class="registration__gender">Other</label>
-                    </fieldset>
-                    <fieldset class="registration__fieldset-login">
-                        <legend class="registration__login-legend">Login details</legend>
-                        <input type="email" placeholder="Email" class="registration__input-login">
-                        <input type="password" placeholder="Password" class="registration__input-login">
-                        <p class="registration__password-comment">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
-                    </fieldset>
-                    <button class="registration__button">join now <img src="img/registration/reg-button.svg" alt="" class="registration__button-svg"></button>
-                </form>
+        <section class="shopping-cart container">
+            <div class="shopping-cart__items">
+                <div class="shopping-cart__items-card margin-bottom">
+                    <img src="img/cart/cart__1.jpg" alt="shopping cart image 1" class="shopping-cart__img" width="262" height="306">
+                        <div class="shopping-cart__items-content">
+                        <h1 class="shopping-cart__items-heading">mango people <br> t-shirt</h1>
+                        <h2 class="shopping-cart__items-price">Price: $300</h2>
+                        <h2 class="shopping-cart__items-color">Color: Red</h2>
+                        <h2 class="shopping-cart__items-size">Size: Xl</h2>
+                        <h2 class="shopping-cart__items-quantity">Quantity: 2</h2>
+                        <img src="img/cart/cross.svg" alt="cross" class="shopping-cart__items-cross">
+                    </div>
+                </div>
+                <div class="shopping-cart__items-card">
+                    <img src="img/cart/cart__2.jpg" alt="shopping cart image 2" class="shopping-cart__img" width="262" height="306">
+                        <div class="shopping-cart__items-content">
+                        <h1 class="shopping-cart__items-heading">mango people <br> t-shirt</h1>
+                        <h2 class="shopping-cart__items-price">Price: $300</h2>
+                        <h2 class="shopping-cart__items-color">Color: Red</h2>
+                        <h2 class="shopping-cart__items-size">Size: Xl</h2>
+                        <h2 class="shopping-cart__items-quantity">Quantity: 2</h2>
+                        <img src="img/cart/cross.svg" alt="cross" class="shopping-cart__items-cross">
+                    </div>
+                </div>
+                <div class="shopping-cart__items-buttons">
+                    <button class="shopping-cart__left-button">clear shopping cart</button>
+                    <button class="shopping-cart__right-button">continue shopping</button>
+                </div>
             </div>
-            <div class="registration__loyalty">
-                <h2 class="registration__loyalty-header">loyalty has its perks</h2>
-                <p class="registration__loyalty-description">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
-                <ul class="registration__loyalty-list">
-                    <li class="registration__loyalty-item"><img src="img/registration/loyalty__check.svg" alt="check" class="loyalty-checkbox">15% off welcome offer</li>
-                    <li class="registration__loyalty-item"><img src="img/registration/loyalty__check.svg" alt="check" class="loyalty-checkbox">Free shipping, returns and exchanges on all orders</li>
-                    <li class="registration__loyalty-item"><img src="img/registration/loyalty__check.svg" alt="check" class="loyalty-checkbox">$10 off a purchase on your birthday</li>
-                    <li class="registration__loyalty-item"><img src="img/registration/loyalty__check.svg" alt="check" class="loyalty-checkbox">Early access to products</li>
-                    <li class="registration__loyalty-item"><img src="img/registration/loyalty__check.svg" alt="check" class="loyalty-checkbox">Exclusive offers & rewards</li>
-                </ul>
+            <div class="shopping-cart__address">
+                <form action="#" method="get">
+                    <fieldset class="shopping-cart__address-fieldset">
+                        <legend class="shopping-cart__address-legend">shipping address</legend>
+                        <input type="text" placeholder="Bangladesh" class="shopping-cart__address-city">
+                        <input type="text" placeholder="State" class="shopping-cart__state">
+                        <input type="text" placeholder="Postcode / Zip" class="shopping-cart__zip">
+                        <button class="shopping-cart__address-btn">get a quote</button>
+                    </fieldset>
+                </form>
+                <div class="shopping-cart__address-proceed">
+                    <p class="shopping-cart__subtotal">sub total $900</p>
+                    <p class="shopping-cart__grand-total">grand total $900</p>
+                    <p class="shopping-cart__checkout">proceed to checkout</p>
+                </div>
             </div>
         </section>
     </main>
         <footer class="footer">
             <section class="subscription">
                 <div class="subscription__wrapper">
+                   
                     <div class="subscription__container container">
                         <div class="subscription__content">
                             <img src="img/footer/content-face.png" alt="round face" class="subscription__face" width="96" height="96">
@@ -121,6 +133,6 @@
                     </ul>
                 </div>
             </div>
-    </footer>
-</body>
-</html>
+        </footer>
+    </body>
+    </html>
