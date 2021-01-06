@@ -1,0 +1,42 @@
+.breadcrumb {
+    max-width: 1600px;
+    height: 148px;
+    background-color: $pink-background;
+
+    .breadcrumb__bg-layer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .breadcrumb__text {
+        font-size: 24px;
+        line-height: 29px;
+        color: var(--pink-color);
+        text-transform: uppercase;
+        margin-top: 59px;
+    }
+
+    .breadcrumb__nav-list {
+        display: flex;
+        margin-top: 65px;
+    }
+
+    .breadcrumb__nav-item {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        padding-right: 5px;
+    }
+
+    .breadcrumb__nav-link {
+        text-decoration: none;
+        color: #636363;
+        padding-left: 5px;
+    }
+
+    .breadcrumb__nav--active {
+        font-weight: 700;
+        color: $pink-color;
+    }
+}

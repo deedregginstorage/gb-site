@@ -1,0 +1,41 @@
+.header {
+    background-color: $black-color;
+    max-width: 1600px;
+    margin: 0 auto;
+
+    .header__container {
+        display: flex;
+        height: 75px;
+        align-items: center;
+        justify-content: space-between
+    }
+
+    .header-logo {
+        margin: 0 41px 0 0;
+    }
+
+    .header__button {
+        background-color: transparent;
+        border: none;
+
+        &:hover,
+        &:focus {
+            opacity: .8;
+        }
+
+        &:active {
+            opacity: .5;
+        }
+    }
+
+    .header__menu-list,
+    .header__logo-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .header__menu-item:not(:last-of-type) {
+        margin: 0 34px 0 0;
+    }
+
+}
