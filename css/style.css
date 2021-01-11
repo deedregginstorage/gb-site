@@ -136,7 +136,7 @@ body {
 }
 
 .container {
-  width: 1140px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
@@ -240,17 +240,40 @@ a {
 .header .header__menu-item:not(:last-of-type) {
   margin: 0 34px 0 0;
 }
+@media (min-width: 552px) and (max-width: 1112px) {
+  .header .header__container {
+    width: 91.5%;
+  }
+}
+@media (max-width: 552px) {
+  .header .header__container {
+    width: 91.5%;
+  }
+}
 
 .brand-name {
   display: flex;
   max-width: 1600px;
   margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  background-color: #F1E4E6;
 }
 .brand-name .brand-name__picture {
   width: 50%;
+  background-color: #fff;
+}
+@media (max-width: 552px) {
+  .brand-name .brand-name__picture {
+    display: none;
+    width: 0%;
+    height: 0;
+  }
 }
 .brand-name .brand-name_img {
   margin: 0 auto;
+  width: 100%;
+  object-fit: fill;
 }
 .brand-name .brand-name__header {
   font-size: 48px;
@@ -260,6 +283,7 @@ a {
   text-transform: uppercase;
   position: relative;
   padding: 0 0 0 28px;
+  margin-left: 7.8%;
 }
 .brand-name .brand-name__header::before {
   position: absolute;
@@ -276,10 +300,28 @@ a {
   line-height: 38px;
   color: #F16D7F;
 }
+@media (max-width: 552px) {
+  .brand-name .brand-name__header .brand-name__header-span {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 552px) {
+  .brand-name .brand-name__header {
+    font-size: 38px;
+    line-height: 45px;
+    font-weight: 700;
+    margin-left: 7, 4%;
+  }
+}
 .brand-name .brand-name__content {
   width: 50%;
-  padding: 335px 0 0 64px;
   background-color: #F1E4E6;
+}
+@media (max-width: 552px) {
+  .brand-name {
+    min-height: 363px;
+  }
 }
 
 .offer {
@@ -296,13 +338,24 @@ a {
   margin-top: 30px;
   background-image: url(../img/offer/offer__accessories.jpg);
 }
+@media (max-width: 552px) {
+  .offer .offer__list .offer__item--bottom {
+    width: 91.46%;
+    margin: 32px auto 0 auto;
+  }
+}
+@media (max-width: 552px) {
+  .offer .offer__list {
+    flex-direction: column;
+  }
+}
 .offer .offer_item-overlay {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
 }
 .offer .offer__item {
-  width: 360px;
+  width: 31.6%;
   height: 260px;
   background-image: url(../img/offer/offer__women.jpg);
   text-align: center;
@@ -316,6 +369,12 @@ a {
 }
 .offer .offer__item .offer_item-category {
   color: #F16D7F;
+}
+@media (max-width: 552px) {
+  .offer .offer__item {
+    width: 91.46%;
+    margin: 32px auto;
+  }
 }
 
 .featured .featured__heading {
@@ -390,13 +449,23 @@ a {
 
 .advantages {
   max-width: 1600px;
-  height: 341px;
+  min-height: 341px;
   background-color: #222222;
   display: flex;
   margin: 0 auto;
 }
 .advantages .advantages-wrap {
   display: flex;
+}
+@media (max-width: 552px) {
+  .advantages .advantages-wrap {
+    flex-direction: column;
+  }
+}
+@media (min-width: 552px) and (max-width: 1112px) {
+  .advantages .advantages-wrap {
+    flex-direction: column;
+  }
 }
 .advantages .advantages__block {
   width: 365px;
@@ -422,22 +491,32 @@ a {
   color: #FBFBFB;
   margin-top: 16px;
 }
+@media (max-width: 552px) {
+  .advantages .advantages__block {
+    margin: 48px auto;
+  }
+}
 
 .subscription {
   max-width: 1600px;
-  height: 448px;
+  min-height: 448px;
   background-image: url(../img/footer/footer__subcsription-img.jpg);
   background-size: cover;
   margin: 0 auto;
 }
 .subscription .subscription__wrapper {
   width: 100%;
-  height: 448px;
+  min-height: 448px;
   background: rgba(244, 244, 244, 0.7);
 }
 .subscription .subscription__container {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 552px) {
+  .subscription .subscription__container {
+    flex-direction: column;
+  }
 }
 .subscription .subscription__content {
   width: 350px;
@@ -486,16 +565,17 @@ a {
 
 .social-links {
   max-width: 1600px;
-  height: 79px;
+  min-height: 79px;
   background-color: #222222;
   color: #FBFBFB;
   font-size: 16px;
   line-height: 19px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 .social-links .social-links__icons {
   width: 185px;
-  float: right;
 }
 .social-links .social-links__wrapper {
   width: 32px;
@@ -514,11 +594,15 @@ a {
 .social-links .instagram-wrap {
   background-color: #F16D7F;
 }
+@media (max-width: 552px) {
+  .social-links {
+    flex-direction: column-reverse;
+  }
+}
 
 .copyright {
   padding-top: 30px;
   width: 332px;
-  float: left;
 }
 
 .breadcrumb {
