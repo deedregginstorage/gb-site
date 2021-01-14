@@ -12,8 +12,6 @@
         
         @include mobile {
             display: none;
-            width: 0%;
-            height: 0;
         }
     }
 
@@ -21,6 +19,10 @@
         margin: 0 auto;
         width: 100%;
         object-fit: fill;
+
+        @include mobile {
+            display: none;
+        }
     }
 
     .brand-name__header {
@@ -66,6 +68,10 @@
     .brand-name__content {
         width: 50%;
         background-color: $pink-background;
+
+        @include mobile {
+            width: 80%;
+        }
     }
 
     @include mobile {

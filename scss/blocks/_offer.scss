@@ -9,6 +9,7 @@
 
         .offer__item--bottom {
             width: 100%;
+            height: 260px;
             margin-top: 30px;
             background-image: url(../img/offer/offer__accessories.jpg);
 
@@ -21,12 +22,6 @@
         @include mobile {
             flex-direction: column;
         }
-    }
-
-    .offer_item-overlay {
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, .7);
     }
 
     .offer__item {
@@ -45,6 +40,12 @@
 
         .offer_item-category {
             color: $pink-color;
+        }
+
+        .offer_item-overlay {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .7);
         }
 
         @include mobile {
