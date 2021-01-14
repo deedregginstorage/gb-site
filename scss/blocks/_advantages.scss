@@ -1,12 +1,19 @@
 .advantages {
     max-width: 1600px;
-    height: 341px;
+    min-height: 341px;
     background-color: $black-color;
     display: flex;
     margin: 0 auto;
 
     .advantages-wrap {
         display: flex;
+        @include mobile {
+            flex-direction: column;
+        }
+
+        @include tablet {
+            flex-direction: column;
+        }
     }
 
     .advantages__block {
@@ -34,6 +41,10 @@
             text-align: center;
             color: #FBFBFB;
             margin-top: 16px;
+        }
+
+        @include mobile {
+            margin: 48px auto;
         }
     }
 }

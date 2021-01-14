@@ -2,13 +2,27 @@
     display: flex;
     max-width: 1600px;
     margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    background-color: $pink-background;
 
     .brand-name__picture {
         width: 50%;
+        background-color: #fff;
+        
+        @include mobile {
+            display: none;
+        }
     }
 
     .brand-name_img {
         margin: 0 auto;
+        width: 100%;
+        object-fit: fill;
+
+        @include mobile {
+            display: none;
+        }
     }
 
     .brand-name__header {
@@ -19,6 +33,7 @@
         text-transform: uppercase;
         position: relative;
         padding: 0 0 0 28px;
+        margin-left: 7.8%;
 
         &::before {
             position: absolute;
@@ -35,12 +50,31 @@
             font-weight: 700;
             line-height: 38px;
             color: $pink-color;
+
+            @include mobile {
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+
+        @include mobile {
+            font-size: 38px;
+            line-height: 45px;
+            font-weight: 700;
+            margin-left: 7,4%;
         }
     }
 
     .brand-name__content {
         width: 50%;
-        padding: 335px 0 0 64px;
         background-color: $pink-background;
+
+        @include mobile {
+            width: 80%;
+        }
+    }
+
+    @include mobile {
+        min-height: 363px;
     }
 }
