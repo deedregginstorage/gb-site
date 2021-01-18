@@ -44,6 +44,11 @@
             left: -12px;
         }
 
+        @include tablet {
+            font-size: 44px;
+            line-height: 53px
+        }
+
         .brand-name__header-span {
             font-size: 32px;
             font-style: normal;
@@ -54,6 +59,11 @@
             @include mobile {
                 font-size: 20px;
                 line-height: 24px;
+            }
+
+            @include tablet {
+                font-size: 24px;
+                line-height: 28.8px;
             }
         }
 

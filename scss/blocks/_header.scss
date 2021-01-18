@@ -7,7 +7,8 @@
         display: flex;
         height: 75px;
         align-items: center;
-        justify-content: space-between
+        justify-content: space-between;
+        width: 91.5%;
     }
 
     .header-logo {
@@ -37,6 +38,13 @@
     .header__menu-item:not(:last-of-type) {
         margin: 0 34px 0 0;
     }
+
+    @include mobile {
+        .header__menu-item:nth-child(3), .header__menu-item:nth-child(2) {
+            display: none;
+        }
+    }
+
 
     @include tablet {
         .header__container {
