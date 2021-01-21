@@ -18,6 +18,10 @@
         @include mobile {
             flex-direction: column;
         }
+
+        @include tablet {
+            flex-direction: column;
+        }
     }
     
     .subscription__content {
@@ -29,6 +33,11 @@
             width: 91%;
             margin: 0 auto;
         }
+
+        @include tablet {
+            width: 91%;
+            margin: 0 auto;
+        }
     }
     
     .subscription__text {
@@ -36,6 +45,10 @@
         line-height: 24px;
         color: #222224;
         padding-top: 30px;
+        @include tablet {
+            width: 360px;
+            margin: 0 auto;
+        }
     }
     
     .subscription__input {
@@ -95,7 +108,12 @@
 
         @include mobile {
             width: 91%;
-            margin: 0 auto;
+            margin: 0 auto 110px auto;
+        }
+
+        @include tablet {
+            width: 91%;
+            margin: 0 auto 140px auto;
         }
     }
     
@@ -117,32 +135,31 @@
     font-size: 16px;
     line-height: 19px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+
+    .social-links__content {
+        @include flex-center-space-between;
+        padding: 21px 0;
+
+        @include mobile {
+            flex-direction: column-reverse;
+
+        }
+    }
 
     .social-links__icons {
         width: 185px;
     }
     
     .social-links__wrapper {
-        width: 32px;
-        height: 32px;
-        background-color: #fff;
-        margin: 24px 7px;
-        float: left;
-    }
-    
-    .social-links__icon-wrap {
-        margin: 0 auto;
-        width: 14px;
+        display: inline-block;
+        background-color: $base-white;
+        text-align: center;
+        margin: 0 4px;
+        padding: 0 8px 8px 8px;
     }
     
     .social-links_wrapper-img {
         vertical-align: -webkit-baseline-middle;
-    }
-    
-    .instagram-wrap {
-        background-color: $pink-color;
     }
 
     @include mobile {
@@ -151,6 +168,10 @@
 }
 
 .copyright {
-    padding-top: 30px;
     width: 332px;
+
+    @include mobile {
+        margin: 40px auto 9px auto;
+        text-align: center;
+    }
 }

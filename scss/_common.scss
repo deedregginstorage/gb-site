@@ -204,7 +204,7 @@ a {
 .featured__content-price {
     font-size: 16px;
     line-height: 19px;
-    color: var(--pink-color);
+    color: $pink-color;
     margin-top: 18px;
 }
 
@@ -217,4 +217,16 @@ a {
     overflow: hidden;
     border: 0;
     clip: rect(0 0 0 0)
+}
+
+.container-tablet {
+    @include tablet {
+        width: 95.8%;
+    }
+}
+
+.container-mobile {
+    @include mobile {
+        width: 95.8%;
+    }
 }
