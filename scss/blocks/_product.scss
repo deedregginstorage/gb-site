@@ -1,0 +1,150 @@
+.carousel {
+    min-height: 777px;
+    background-color: $super-light-gray;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 129px auto;
+}
+
+.card {
+    border: none;
+    background-color: $super-light-gray;
+}
+
+.product {
+    margin-top: -50px;
+}
+
+.product-card {
+    min-height: 601px;
+    z-index: 2;
+    padding: 64.5px 0 0 0;
+    border: 1px solid $light-gray;
+}
+
+.product-info {
+    padding: 65px 0;
+    margin-top: -60px;
+    position: relative;
+    background-color: #FFF;
+    border: 1px solid $light-gray;
+}
+
+.product-info__category {
+    color: $pink-color;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    position: relative;
+}
+
+.product-info__category::after {
+    content: '';
+    width: 63px;
+    height: 3px;
+    background-color: $pink-color;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.product-info__title {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.product-info__text {
+    max-width: 555px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    text-align: center;
+    color: $base-gray;
+}
+
+.product-info__price {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    color: $pink-color;
+
+}
+
+.product-info__content {
+    padding-bottom: 65px;
+}
+
+.product-info__content::after {
+    content: '';
+    width: 50%;
+    height: 1px;
+    background-color: $light-gray;
+    position: relative;
+    top: 65px;
+}
+
+.product-info__button {
+    outline: none;
+    background-color: transparent;
+    border: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    padding: 0 14px;
+    color: $base-gray;
+}
+
+.product-info__button svg {
+    padding-left: 0.5em;
+}
+
+.product-info__button:hover {
+    color: $base-black;
+}
+
+.product-info__button:hover svg {
+    fill: $base-black;
+}
+
+.product-info__button::after {
+    border-top: none;
+}
+
+.product-info__add-to-cart {
+    padding: 10px 38px;
+    color: $pink-color;
+    border: 1px solid $pink-color;
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.product-info__add-to-cart:hover {
+    color: white;
+    background-color: $pink-color;
+}
+
+.product-info__add-to-cart:hover svg {
+    fill: $base-white;
+}
+
+.product-info__add-to-cart:active,
+.product-info__add-to-cart:focus {
+    outline: 0;
+    background-color: darken($pink-color, 10%);
+    color: white;
+}
+
+.product-info__add-to-cart:focus svg {
+    fill: $base-white;
+}

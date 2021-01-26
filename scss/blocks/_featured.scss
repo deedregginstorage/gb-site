@@ -7,7 +7,6 @@
         font-weight: 400;
         color: $black-color;
         margin-top: 97px;
-        ;
         text-transform: uppercase;
     }
 
@@ -25,7 +24,7 @@
         width: 211px;
         height: 47px;
         margin: 48.5px auto 95.5px auto;
-        color: var(--pink-color);
+        color: $pink-color;
 
         &:hover {
             background-color: $pink-color;
@@ -57,6 +56,8 @@
         &:focus .featured__item-img {
             display: block;
         }
+
+
     }
 
     .featured__item-button {
@@ -77,7 +78,7 @@
         }
 
         &:hover {
-            background-color: $pink-color;
+            opacity: 0.8;
         }
     }
 

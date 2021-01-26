@@ -32,6 +32,10 @@
         .catalog__pagination-link {
             text-decoration: none;
             color: #EBEBEB;
+
+            &:hover {
+                color: $base-gray;
+            }
         }
 
         .catalog__pagination-link--active {
@@ -51,15 +55,30 @@
 
         .catalog__filter-text {
             color: #000;
+            @include mobile {
+                display: none;
+            }
         }
 
         .catalog__filter-button {
             margin-left: 11px;
         }
+
+        @include tablet {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        @include mobile {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
     }
 
     .catalog__sort {
-        margin-left: 320px;
+        margin-left: 31.5%;
 
         .catalog__sort-link {
             color: #6F6E6E;
@@ -68,6 +87,20 @@
 
         .catalog__sort-arrow {
             margin-left: 10px;
+        }
+
+        @include mobile {
+            margin-left: 0;
+        }
+
+        @include tablet {
+            margin-left: 0;
+        }
+    }
+
+    @include tablet {
+        .catalog__item:last-child {
+            display: none;
         }
     }
 }
