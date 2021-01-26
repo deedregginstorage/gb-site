@@ -3,6 +3,12 @@
     padding-top: 64px;
     padding-bottom: 96px;
 
+    .registration__form {
+        @include mobile {
+            margin: 0 auto;
+        }
+    }
+
     input[type="text"],
     input[type="email"],
     input[type="password"] {
@@ -90,7 +96,15 @@
     }
 
     .registration__loyalty {
-        margin-left: 128px;
+        margin-left: 11.2%;
+
+        @include tablet {
+            margin-left: 2.8%;
+        }
+
+        @include mobile {
+            margin: 40px auto 100px;
+        }
     }
 
     .registration__fieldset-name:first-child,
@@ -132,5 +146,9 @@
             background-color: #fff;
             color: $pink-color;
         }
+    }
+
+    @include mobile {
+        flex-direction: column;
     }
 }
