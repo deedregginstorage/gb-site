@@ -13,6 +13,20 @@
 .card {
     border: none;
     background-color: $super-light-gray;
+
+    &:last-child {
+        @include tablet {
+            display: none;
+        }
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    @include tablet {
+        width: 46.9%;
+    }
 }
 
 .product {

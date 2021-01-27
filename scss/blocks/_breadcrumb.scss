@@ -3,15 +3,22 @@
     height: 148px;
     background-color: $pink-background;
     margin: 0 auto;
-
+    
     .breadcrumb__bg-layer {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 60px 0 60px 0;
+
+        @include tablet {
+            width: 91.6%;
+        }
 
         @include mobile {
             flex-direction: column;
-        }
+            justify-content: space-around;
+            width: 91.6%;
+        }   
     }
 
     .breadcrumb__text {
@@ -19,20 +26,10 @@
         line-height: 29px;
         color: $pink-color;
         text-transform: uppercase;
-        margin-top: 59px;
-
-        @include mobile {
-            margin-top: 24px;
-        }
     }
 
     .breadcrumb__nav-list {
         display: flex;
-        margin-top: 65px;
-
-        @include mobile {
-            margin-top: 32px;
-        }
     }
 
     .breadcrumb__nav-item {
