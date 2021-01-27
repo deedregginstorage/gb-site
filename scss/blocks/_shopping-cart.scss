@@ -17,6 +17,7 @@
     .shopping-cart__items {
         margin-top: 96px;
         width: 652px;
+
         @include tablet {
             width: 100%;
         }
@@ -153,7 +154,7 @@
             height: 45px;
             border: 1px solid #A4A4A4;
             display: block;
-    }
+        }
 
         .shopping-cart__address-legend {
             font-weight: 300;
@@ -199,7 +200,7 @@
                 padding-right: 52.5px;
                 padding-bottom: 12px;
             }
-        
+
             .shopping-cart__grand-total {
                 font-weight: 300;
                 font-size: 16px;
@@ -207,7 +208,7 @@
                 text-align: right;
                 padding-right: 52.5px;
             }
-        
+
             .shopping-cart__checkout {
                 padding: 16px 42px 16px 42px;
                 width: 190px;
@@ -218,15 +219,15 @@
                 background-color: $pink-color;
                 margin: 41px 52.5px;
                 border: 1px solid $pink-color;
-        
+
                 .shopping-cart__checkout:hover {
                     color: $pink-color;
                     background-color: #fff;
                 }
             }
         }
-        
+
     }
 
- 
+
 }

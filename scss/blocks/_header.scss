@@ -40,7 +40,9 @@
     }
 
     @include mobile {
-        .header__menu-item:nth-child(3), .header__menu-item:nth-child(2) {
+
+        .header__menu-item:nth-child(3),
+        .header__menu-item:nth-child(2) {
             display: none;
         }
 

@@ -55,6 +55,7 @@
 
         .catalog__filter-text {
             color: #000;
+
             @include mobile {
                 display: none;
             }
